@@ -26,7 +26,11 @@ function checkAnswer() {
         score++
         updateLocalStorage()
     }else {
-        score--
+        if (score === 0){
+            score = 0
+        }else {
+            score --
+        }
         updateLocalStorage()
     }
 }
